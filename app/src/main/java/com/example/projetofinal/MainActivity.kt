@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         tv_Cadastro.setOnClickListener {
             registro();
         }
+
+        tv_esqueciSenha.setOnClickListener {
+            esqueciSenha();
+        }
     }
 
     fun login(){
@@ -45,7 +49,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun esqueciSenha(){
-
+        val navegaParaEsqueciSenha = Intent(this, EsqueciSenhaActivity::class.java);
+        startActivity(navegaParaEsqueciSenha);
     }
 
     fun registro(){

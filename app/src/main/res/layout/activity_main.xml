@@ -11,15 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="87dp"
+        android:layout_marginBottom="108dp"
         android:text="Ainda não é cadastrado? Cadastre-se!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_Login"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_esqueciSenha" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/ti_Senha"
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="162dp"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,13 +75,16 @@
         android:id="@+id/tv_esqueciSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="87dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="20dp"
         android:text="Esqueci a senha"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Cadastro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_Login" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_Login"
+        app:layout_constraintVertical_bias="0.837" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
