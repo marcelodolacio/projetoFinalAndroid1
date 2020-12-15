@@ -1,12 +1,12 @@
-package com.example.projetofinal
+package com.example.projetofinal.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.projetofinal.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_esqueci_senha.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class EsqueciSenhaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

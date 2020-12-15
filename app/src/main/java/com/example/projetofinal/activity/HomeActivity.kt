@@ -1,7 +1,8 @@
-package com.example.projetofinal
+package com.example.projetofinal.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.projetofinal.R
 import kotlinx.android.synthetic.main.activity_cadastro.*
 
 class HomeActivity : AppCompatActivity() {
