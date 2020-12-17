@@ -1,4 +1,4 @@
-package com.example.projetofinal.activity
+package com.example.projetofinal.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -22,20 +22,39 @@ class CadastroActivity : AppCompatActivity() {
         val senha = ti_senhaCadastro.text.toString()
         val confimacaosenha = ti_repeteSenhaCadastro.text.toString()
 
+        /* ****  VALIDACAO DE CAMPOS DO REGISTER  ****************/
+        if (email.isBlank() ){
+            val text = getString(R.string.email_required) //buscar texto de validação no arq string
+            Toast.makeText( this , text, Toast.LENGTH_LONG).show()
+            return
+        }
+        if (senha.isBlank() ){
+            val text = getString(R.string.password_required) //buscar texto validação no arq string
+            Toast.makeText( this , text, Toast.LENGTH_LONG).show()
+            return
+        }
+        if (senha.length < 6 ){
+            Toast.makeText( this , "Senha com mínimo de 6 caracteres", Toast.LENGTH_LONG).show()
+            return
+        }
+        if (confimacaosenha != senha ){
+            Toast.makeText( this , "Confirmação de senha e senha devem ser iguais!", Toast.LENGTH_LONG).show()
+            return
+        }
+
         val autenticacao = FirebaseAuth.getInstance()
         autenticacao.createUserWithEmailAndPassword(email, senha)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
-                        Toast.makeText(baseContext, "Authentication CERTO.",
+                        Toast.makeText(baseContext, "Cadastro efetuado com sucesso.",
                                 Toast.LENGTH_SHORT).show()
+                        finish() //finalizar pilha! Evitar que, ao usuario clicar em voltar no aparelho, ele retorne para tela de cadastro
                     } else {
                         // If sign in fails, display a message to the user.
 
                         Toast.makeText(baseContext, "Authentication failed.",
                                 Toast.LENGTH_SHORT).show()
-
-
                     }
 
                     // ...

@@ -1,4 +1,6 @@
 package com.example.projetofinal.domain
 
-class LoginResult {
-}
+data class LoginResult(
+    var result:String? = null ,   //? = null (ou exclusivo) --> retornará somente 1
+    var error:String? = null
+)

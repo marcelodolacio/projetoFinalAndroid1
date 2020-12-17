@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoFinal">
-        <activity android:name=".activity.EsqueciSenhaActivity"></activity>
-        <activity android:name=".activity.HomeActivity" />
-        <activity android:name=".activity.CadastroActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="com.example.projetofinal.view.activity.EsqueciSenhaActivity"></activity>
+        <activity android:name="com.example.projetofinal.view.activity.HomeActivity" />
+        <activity android:name="com.example.projetofinal.view.activity.CadastroActivity" />
+        <activity android:name="com.example.projetofinal.view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

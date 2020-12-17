@@ -1,4 +1,4 @@
-package com.example.projetofinal.activity
+package com.example.projetofinal.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +20,13 @@ class EsqueciSenhaActivity : AppCompatActivity() {
 
     fun resgatarSenha(){
         val email = ti_emailEsqueciSenha.text.toString();
+
+        /* ****  VALIDAR CAMPO EMAIL  ****************/
+        if (email.isBlank() ){
+            val text = getString(R.string.email_required) //buscar texto de validação no arq string
+            Toast.makeText( this , text, Toast.LENGTH_LONG).show()
+            return
+        }
 
         val autenticacao = FirebaseAuth.getInstance();
         val operacao = autenticacao.sendPasswordResetEmail(email);
