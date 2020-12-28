@@ -2,13 +2,10 @@ package com.example.projetofinal.repository
 
 import com.example.projetofinal.domain.Personagem
 import com.example.projetofinal.repository.dto.CharacterDTO
-import com.example.projetofinal.repository.dto.PageDTO
-import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Headers
-import retrofit2.http.Query
 
 interface BreakingBadPersonagensApi {
     @GET("characters")  //https://breakingbadapi.com/api/characters
