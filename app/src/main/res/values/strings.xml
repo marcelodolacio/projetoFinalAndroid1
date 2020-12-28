@@ -11,6 +11,8 @@
     <string name="ti_emailCadastro">E-mail obrigatório!</string>
     <string name="ti_senhaCadastro">Senha obrigatória!</string>
     <string name="ti_repeteSenhaCadastro">Confirmação de senha obrigatória!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
