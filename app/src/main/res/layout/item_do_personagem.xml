@@ -8,7 +8,7 @@
     <data>
         <variable
             name="personagem"
-            type="com.example.projetofinal.domain.Personagem"/>
+            type="com.ilm.projetofinal.domain.Personagem"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

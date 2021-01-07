@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable name="meuFragmento" type="com.example.projetofinal.view.fragment.ListaFragment"></variable>
+        <variable name="meuFragmento" type="com.ilm.projetofinal.view.fragment.ListaFragment"></variable>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
